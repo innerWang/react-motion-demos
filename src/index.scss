@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  height: 80px;
+  background: rgb(2, 38, 85);
+  color: #fff;
+  line-height: 80px;
+  padding-left: 20px;
+}
+
+.cont {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+aside {
+  padding: 0 10px;
+  background: rgb(2, 38, 85);
+  text-align: center;
+}
+
+.nav-item {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #999;
+}
+
+.nav-item:last-child {
+  border-bottom: 1px solid #999;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-board {
+  height: 100%;
+}
+
+h2 {
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.motion-bg-bar {
+  position: relative;
+  margin-top: 50px;
+  height: 10px;
+  width: 450px;
+  background: #a58;
+}
+
+.motion-block {
+  position: absolute;
+  top: calc(50% - 25px);
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  background: rgb(240, 147, 147);
+}
+
+.stragged-warp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stragged-box {
+  flex-shrink: 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #235;
+  margin: 10px;
+}
+
+.trans-sec {
+  background: #333;
+  height: calc(100% - 32px);
+}
+
+
+
