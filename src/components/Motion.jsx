@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Motion, spring } from "react-motion";
+import React, { useState } from 'react'
+import { Motion, spring } from 'react-motion'
 
 const MotionExample = () => {
-  const [open, setOpen] = useState(false);
-
+  const [open, setOpen] = useState(false)
   return (
     <div>
       <h2> 我是 Motion 的应用示例</h2>
@@ -21,7 +20,7 @@ const MotionExample = () => {
         )}
       </Motion>
     </div>
-  );
-};
+  )
+}
 
-export default MotionExample;
+export default MotionExample

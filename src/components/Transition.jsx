@@ -1,8 +1,8 @@
-import React from "react";
-//import { TransitionMotion } from "react-motion";
+import React from 'react'
+// import { TransitionMotion } from "react-motion";
 
 const TransitionMotionExample = () => {
-  //const [pos, setPos] = useState({ x: 0, y: 0, now: "t0" });
+  // const [pos, setPos] = useState({ x: 0, y: 0, now: "t0" });
 
   // const willLeave = styleThatLeft => {
   //   return {};
@@ -13,8 +13,8 @@ const TransitionMotionExample = () => {
   // };
 
   const handleMouseMove = e => {
-    console.log(e);
-  };
+    console.log(e) // eslint-disable-line
+  }
 
   return (
     <div className="main-board">
@@ -25,7 +25,7 @@ const TransitionMotionExample = () => {
         </TransitionMotion> */}
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default TransitionMotionExample;
+export default TransitionMotionExample
