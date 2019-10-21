@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { StaggeredMotion, spring } from 'react-motion'
 
+import styles from './Stragged.module.scss'
+
 const StraggedExample = () => {
   const [scale, setScale] = useState(1)
   const getStyles = prevStyles =>
@@ -12,7 +14,7 @@ const StraggedExample = () => {
           }
     })
   return (
-    <div>
+    <div className={styles.mainBoard}>
       <h2> 我是 Stragged 的应用示例</h2>
       <button onClick={() => setScale(prevScale => (prevScale === 0 ? 1 : 0))}>
         {'  click toggle!  '}
@@ -27,7 +29,7 @@ const StraggedExample = () => {
       >
         {stepStyles => {
           return (
-            <div className="stragged-warp">
+            <div className={styles.straggedWarp}>
               {stepStyles.map((stepStyle, idx) => {
                 /** 此处一定要注意！！ 是 stepStyle = {scale: 1}  */
                 return (
@@ -37,7 +39,7 @@ const StraggedExample = () => {
                       transform: `scale(${stepStyle.scale})`,
                       opacity: stepStyle.scale
                     }}
-                    className="stragged-box"
+                    className={styles.straggedBox}
                   />
                 )
               })}

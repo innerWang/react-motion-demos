@@ -28,6 +28,7 @@ module.exports = {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/no-array-index-key": "off",
         "react/button-has-type": "off",
-        "no-console": "error"
+        "no-console": "error",
+        "import/prefer-default-export": "off"
     }
 };

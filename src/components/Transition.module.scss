@@ -1,0 +1,16 @@
+@import './common.module.scss';
+
+.transSec {
+  position: relative;
+  background: #333;
+  height: calc(100% - 32px);
+  overflow: hidden;
+}
+
+.transSecCircle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid silver;
+  border-radius: 50%;
+}

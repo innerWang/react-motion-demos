@@ -5,16 +5,19 @@ import { paths } from 'utils/paths'
 import MotionExample from 'components/Motion'
 import StraggedExample from 'components/Stragged'
 import TransitionMotionExample from 'components/Transition'
+import DigitalMotionExample from 'components/DigitalMotion'
+
+import styles from './App.module.scss'
 
 function App() {
   return (
     <>
       <h1>React-Motion</h1>
       <Router>
-        <div className="cont">
+        <div className={styles.cont}>
           <aside>
             {Object.values(paths).map(t => (
-              <div className="nav-item" key={t.key}>
+              <div className={styles['nav-item']} key={t.key}>
                 <Link to={t.path}>{t.title}</Link>
               </div>
             ))}
@@ -25,6 +28,7 @@ function App() {
               path={paths.transition.path}
               component={TransitionMotionExample}
             />
+            <Route path={paths.digital.path} component={DigitalMotionExample} />
             <Route exact path={paths.motion.path} component={MotionExample} />
           </main>
         </div>

@@ -1,0 +1,15 @@
+@import './common.module.scss';
+
+.straggedWarp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.straggedBox {
+  flex-shrink: 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #235;
+  margin: 10px;
+}

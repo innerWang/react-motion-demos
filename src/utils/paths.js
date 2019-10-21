@@ -12,6 +12,11 @@ export const paths = {
   transition: {
     title: 'TransitionMotion',
     path: '/transition',
-    key: 'trnasition'
+    key: 'transition'
+  },
+  digital: {
+    title: 'DigitalMotion',
+    path: '/digital',
+    key: 'digital'
   }
 }

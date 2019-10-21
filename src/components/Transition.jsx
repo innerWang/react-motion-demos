@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { TransitionMotion, spring } from 'react-motion'
 
+import styles from './Transition.module.scss'
+
 const TransitionMotionExample = () => {
   const [pos, setPos] = useState({ x: 0, y: 0, now: 't0' })
 
@@ -40,16 +42,16 @@ const TransitionMotionExample = () => {
   }
 
   return (
-    <div className="main-board">
+    <div className={styles.mainBoard}>
       <h2> 我是 TransitionMotion 应用示例</h2>
       <TransitionMotion styles={getStyles} willLeave={willLeave}>
         {stepStyles => {
           return (
-            <section className="trans-sec" onMouseMove={handleMouseMove}>
+            <section className={styles.transSec} onMouseMove={handleMouseMove}>
               {stepStyles.map(({ key, style: { x, y, opacity, scale } }) => (
                 <div
                   key={key}
-                  className="trans-sec-circle"
+                  className={styles.transSecCircle}
                   style={{
                     opacity,
                     scale,

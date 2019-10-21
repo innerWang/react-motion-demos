@@ -1,0 +1,38 @@
+h1 {
+  height: 80px;
+  background: rgb(2, 38, 85);
+  color: #fff;
+  line-height: 80px;
+  padding-left: 20px;
+}
+
+.cont {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+aside {
+  padding: 0 10px;
+  background: rgb(2, 38, 85);
+  text-align: center;
+
+  .nav-item {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #999;
+
+    &:last-child {
+      border-bottom: 1px solid #999;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}

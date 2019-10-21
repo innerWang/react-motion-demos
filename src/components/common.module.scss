@@ -1,0 +1,15 @@
+.mainBoard {
+  height: 100%;
+
+  h2 {
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  button {
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
