@@ -6,6 +6,7 @@ import MotionExample from 'components/Motion'
 import StraggedExample from 'components/Stragged'
 import TransitionMotionExample from 'components/Transition'
 import DigitalMotionExample from 'components/DigitalMotion'
+import PLXMotion from 'components/PLX'
 
 import styles from './App.module.scss'
 
@@ -30,6 +31,7 @@ function App() {
             />
             <Route path={paths.digital.path} component={DigitalMotionExample} />
             <Route exact path={paths.motion.path} component={MotionExample} />
+            <Route exact path={paths.plx.path} component={PLXMotion} />
           </main>
         </div>
       </Router>

@@ -18,5 +18,10 @@ export const paths = {
     title: 'DigitalMotion',
     path: '/digital',
     key: 'digital'
+  },
+  plx: {
+    title: 'PLX',
+    path: '/plx',
+    key: 'plx'
   }
 }
