@@ -7,6 +7,7 @@ import StraggedExample from 'components/Stragged'
 import TransitionMotionExample from 'components/Transition'
 import DigitalMotionExample from 'components/DigitalMotion'
 import PLXMotion from 'components/PLX'
+import CountUp from 'components/CountUp'
 
 import styles from './App.module.scss'
 
@@ -32,6 +33,7 @@ function App() {
             <Route path={paths.digital.path} component={DigitalMotionExample} />
             <Route exact path={paths.motion.path} component={MotionExample} />
             <Route exact path={paths.plx.path} component={PLXMotion} />
+            <Route exact path={paths.countup.path} component={CountUp} />
           </main>
         </div>
       </Router>

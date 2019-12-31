@@ -2,11 +2,12 @@ import React from 'react'
 import Plx from 'react-plx'
 import styles from './PLX.module.scss'
 
-// 注意 parallaxData是数组
+// 注意 parallaxData是数组 ， 检测的是整个页面的滚动，而不是单个容器的？？？
 const parallaxData = [
   {
-    start: 40,
-    duration: 200,
+    start: 'self',
+    startOffset: 50,
+    duration: 300,
     properties: [
       {
         startValue: 0,
@@ -28,6 +29,9 @@ const PLX = () => {
   return (
     <div className={styles.mainBoard}>
       <h2> 我是 react-plx 应用示例</h2>
+      {/* <div className={styles.mainSec}>
+        <div className={styles.padding} /> */}
+      <div className={styles.padding} />
       <section>
         <Plx
           parallaxData={parallaxData}
@@ -38,7 +42,8 @@ const PLX = () => {
           onPlxEnd={() => console.log('Plx - onPlxEnd callback')}
         />
       </section>
-      <div style={{ height: '1000px' }} />
+      <div className={styles.padding} />
+      {/* </div> */}
     </div>
   )
 }

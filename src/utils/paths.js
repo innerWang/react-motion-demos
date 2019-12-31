@@ -23,5 +23,10 @@ export const paths = {
     title: 'PLX',
     path: '/plx',
     key: 'plx'
+  },
+  countup: {
+    title: 'CountUp',
+    path: '/countup',
+    key: 'countup'
   }
 }
